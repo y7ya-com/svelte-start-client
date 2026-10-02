@@ -1,7 +1,21 @@
+<div align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://tanstack.com/api/readme/router.png?title=TanStack%20Svelte%20Start&theme=dark"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://tanstack.com/api/readme/router.png?title=TanStack%20Svelte%20Start"
+    />
+    <img
+      src="https://tanstack.com/api/readme/router.png?title=TanStack%20Svelte%20Start"
+      alt="TanStack Svelte Start"
+      width="900"
+    />
+  </picture>
+</div>
+
 # TanStack Svelte Start Client
 
-Client-side entry points for TanStack Start on Svelte 5.
-
-Experimental community port — not an official TanStack release. The API
-mirrors the react/solid/vue equivalents; see
-https://tanstack.com/router/latest for the framework-agnostic docs.
+See https://tanstack.com/start/latest

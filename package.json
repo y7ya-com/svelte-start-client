@@ -1,11 +1,11 @@
 {
   "name": "@tanstack/svelte-start-client",
-  "version": "0.0.6-experimental",
-  "description": "Client-side entry points for TanStack Start on Svelte — community port; mirrors @tanstack/vue-start-client.",
+  "version": "0.0.8-experimental",
+  "description": "Modern and scalable routing for Svelte applications",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/y7ya-com/router.git",
+    "url": "git+https://github.com/TanStack/router.git",
     "directory": "packages/svelte-start-client"
   },
   "funding": {
@@ -25,9 +25,11 @@
   "module": "dist/index.js",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "svelte": "./dist/index.js",
-      "import": "./dist/index.js"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "svelte": "./dist/index.js",
+        "default": "./dist/index.js"
+      }
     },
     "./package.json": "./package.json"
   },
@@ -39,12 +41,12 @@
     "node": ">=12"
   },
   "dependencies": {
-    "@tanstack/router-core": "^1.171.15",
-    "@tanstack/svelte-router": "github:y7ya-com/svelte-router#v0.0.6-experimental",
-    "@tanstack/start-client-core": "^1.170.14"
+    "@tanstack/router-core": "^1.171.34",
+    "@tanstack/svelte-router": "github:y7ya-com/svelte-router#v0.0.8-experimental",
+    "@tanstack/start-client-core": "^1.170.34"
   },
   "peerDependencies": {
-    "@tanstack/svelte-router": "github:y7ya-com/svelte-router#v0.0.6-experimental",
+    "@tanstack/svelte-router": "github:y7ya-com/svelte-router#v0.0.8-experimental",
     "svelte": "^5.0.0"
   }
 }
